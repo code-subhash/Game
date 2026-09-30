@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header-Bar">
+        <h1 style="margin-bottom: 0px;">Stone - Paper - Scissor</h1>
+        <h4 style="margin-top: 1.5px;">Choose your move. Beat the computer!</h4>
+    </div>
+    <div id="main">
+        <div id="resultBar">
+            <div class="results">
+                <p>Your Wins</p>
+                <span id="player-wins">0</span>
+            </div>
+            <div id="round-info" class="results">
+                <p>Round 1 of 10</p>
+            </div>
+            <div class="results">
+                <p>Computer Wins</p>
+                <span id="computer-wins">0</span>
+            </div>
+        </div>
+
+        <div id="game">
+            <div id="player-move">
+                <h3>Your Move</h3>
+                <p>Click on one of the options below</p>
+                <div id="player-move-buttons">
+                    <button id="rock-button" class="player-move" onclick="makeMove('rock')">🪨</button>
+                    <button id="paper-button" class="player-move" onclick="makeMove('paper')">📄</button>
+                    <button id="scissors-button" class="player-move" onclick="makeMove('scissors')">✂️</button>
+                </div>
+            </div>
+            <div id="computer-move">
+                <p>Computer's Move</p>
+                <button id="computer-move-button">?</button>
+                <p>(will be chosen after you)</p>
+            </div>
+        </div>
+        <div id="instructions">
+            <h3>🏆Make your move!</h3>
+            <p>Choose Rock, Paper or Scissors to start the round</p>
+        </div>
+        <div id="game-history-Container">
+            <h3>Game History</h3>
+            <table id="game-history">
+                <tr>
+                    <th>Round</th>
+                    <th>Your Move</th>
+                    <th>Computer's Move</th>
+                    <th>Result</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+
+</body>
+</html>
